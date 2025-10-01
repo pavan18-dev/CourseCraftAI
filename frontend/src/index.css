@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* simple input/button utilities */
+.input {
+  @apply w-full border border-slate-200 rounded px-3 py-2 bg-white;
+}
+.btn-primary {
+  @apply bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700;
+}
+.btn-ghost {
+  @apply border px-3 py-2 rounded bg-white;
+}
+
+/* small loading dot animation */
+.dot-flash {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #6366f1, #06b6d4);
+  box-shadow: 0 0 8px rgba(99,102,241,0.6);
+  animation: flash 1s infinite;
+}
+@keyframes flash {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* prose tweaks */
+.prose {
+  font-size: 15px;
+  line-height: 1.6;
+}

@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #2a4d9c;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-container {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2a4d9c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #1f3673;
+}
+
+.generated-plan {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.generated-plan h2 {
+  color: #2a4d9c;
+}
+
+.roadmap-container {
+  margin-top: 20px;
+}
+
+.roadmap-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.roadmap-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+}
+
+.roadmap-icon {
+  color: #2a4d9c;
+  margin-bottom: 10px;
+}
